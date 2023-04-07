@@ -16,7 +16,7 @@ RSpec.describe "Foods Index Page" do
     it "I see a total of the number of items returned by the search" do
       visit "/foods"
 
-      expect(page).to have_content("Total Results: ")
+      expect(page).to have_content("Total Hits: 51270")
     end
 
     xit "I see a list of TEN foods that contain the ingredient 'sweet potatoes'" do
