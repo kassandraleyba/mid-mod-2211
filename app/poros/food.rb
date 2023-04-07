@@ -7,11 +7,12 @@ class Food
               :ingredients
 
   def initialize(data)
-    @total_hits = data[:total_hits]
-    @fdcid = data[:foods][0][:fdcId]
-    @gtin = data[:foods][0][:gtinUpc]
-    @description = data[:foods][0][:description]
-    @brand_owner = data[:foods][0][:brandOwner]
-    @ingredients = data[:foods][0][:ingredients]
+    # @total_hits = data[:totalHits]
+    binding.pry
+    @fdcid = data[:fdcId]
+    @gtin = data[:gtinUpc]
+    @description = data[:description]
+    @brand_owner = data[:brandOwner]
+    @ingredients = data[:ingredients]
   end
 end

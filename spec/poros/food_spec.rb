@@ -3,18 +3,18 @@ require "rails_helper"
 RSpec.describe Food do
   it "exists" do
     attrs = {
-      total_hits: 51270,
+      totalHits: 51270,
       foods: [{
-        fdcid: 123456,
-        gtin: 123456789012,
+        fdcId: 123456,
+        gtinUpc: 123456789012,
         description: "Sweet Potato",
-        brand_owner: "Sweet Potato Inc.",
+        brandOwner: "Sweet Potato Inc.",
         ingredients: "Sweet Potatoes"
       }]
     }
 
     food = Food.new(attrs)
-    # binding.pry
+   
     expect(food).to be_a(Food)
     expect(food.total_hits).to eq(51270)
     expect(food.fdcid).to eq(123456)
