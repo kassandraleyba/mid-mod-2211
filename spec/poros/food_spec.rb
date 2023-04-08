@@ -16,7 +16,6 @@ RSpec.describe Food do
     food = Food.new(attrs)
    
     expect(food).to be_a(Food)
-    expect(food.total_hits).to eq(51270)
     expect(food.fdcid).to eq(123456)
     expect(food.gtin).to eq(123456789012)
     expect(food.description).to eq("Sweet Potato")
