@@ -7,8 +7,6 @@ class Food
               :ingredients
 
   def initialize(data)
-    # @total_hits = data[:totalHits]
-    binding.pry
     @fdcid = data[:fdcId]
     @gtin = data[:gtinUpc]
     @description = data[:description]

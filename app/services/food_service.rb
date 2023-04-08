@@ -1,7 +1,6 @@
 class FoodService
   def self.food_by_name(query)
-    get_url("/fdc/v1/foods/search?query=#{query}")
-    # get_url("/fdc/v1/foods/search?pageSize=50&pageNumber=2&sortBy=dataType.keyword&sortOrder=asc&query=#{query}")
+    get_url("/fdc/v1/foods/search?pageSize=10&query=#{query}")
   end
 
   def self.get_url(url)
